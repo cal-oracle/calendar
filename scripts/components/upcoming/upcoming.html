@@ -1,0 +1,14 @@
+﻿
+<h1>Upcoming Events <button class="button red" data-bind="click:$root.addDialog">create</button></h1>
+
+<ul id="upcomingevents" data-bind="foreach: nextten">
+    <li>
+        <div>
+            <span data-bind="text:date"></span>
+            <span data-bind="text:desc"></span>
+            <!--<label data-bind="text: title, event: { dblclick: $root.editItem }"></label>-->
+            <button class="destroy" data-bind="click: $root.removeEvent"></button>
+        </div>
+        <!--<input class="edit" data-bind="value: title, valueUpdate: 'afterkeydown', enterKey: $root.stopEditing, escapeKey: $root.cancelEditing, selectAndFocus: editing, event: { blur: $root.stopEditing }">-->
+    </li>
+</ul>

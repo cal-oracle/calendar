@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calendar</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link href="css/redmond/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+<body>
+    <aside>
+        <!--<mini-calendar params="list: events()"></mini-calendar>-->
+        <section>
+            <div id="miniCalendar"></div>
+        </section>
+        <upcoming params="list: events"></upcoming>
+    </aside>
+    <week params="selectedDate: selectedDate"></week>
+
+    <script data-main="scripts/app/app" src="scripts/require.js"></script>
+</body>
+</html>
